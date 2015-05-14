@@ -1,7 +1,7 @@
 class Polygon
 {
 public:
-	double area();
-	double perimeter();
+	virtual double area();
+	virtual double perimeter();
 
 };
