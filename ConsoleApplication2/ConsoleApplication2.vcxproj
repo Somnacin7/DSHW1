@@ -78,7 +78,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Hexagon.h" />
+    <ClInclude Include="Octagon.h" />
+    <ClInclude Include="Pentagon.h" />
     <ClInclude Include="Polygon.h" />
+    <ClInclude Include="Quadrilateral.h" />
+    <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
