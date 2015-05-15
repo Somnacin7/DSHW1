@@ -78,6 +78,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Rectangle.h" />
     <ClInclude Include="Hexagon.h" />
     <ClInclude Include="Octagon.h" />
     <ClInclude Include="Pentagon.h" />
