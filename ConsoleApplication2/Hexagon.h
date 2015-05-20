@@ -22,9 +22,6 @@ public:
 		return perimeter;
 	}
 
-
-
-
 private:
 	double sideLength;
 	
