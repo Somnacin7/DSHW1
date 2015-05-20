@@ -1,6 +1,10 @@
 class Polygon
 {
 public:
-	virtual double area() = 0;
-	virtual double perimeter() = 0;
+	virtual double getArea()= 0;
+	virtual double getPerimeter() = 0;
+
+protected:
+	double area;
+	double perimeter;
 };

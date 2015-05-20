@@ -16,12 +16,12 @@ public:
 		this->width = width;
 	}
 
-	double area()
+	double getArea()
 	{
 		return length * width;
 	}
 
-	double perimeter()
+	double getPerimeter()
 	{
 		return 2 * length + 2 * width;
 	}
