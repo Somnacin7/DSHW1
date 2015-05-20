@@ -5,17 +5,17 @@
 class Hexagon : Polygon
 {
 public:
-	Hexagon()
-	{
-
-	}
-
-
+	// Constructs a regular Hexagon with the provided side length
 	Hexagon(double sideLength)
 	{
 		this->sideLength = sideLength;
 		this->perimeter = sideLength * 6;
 		this->area = ((3 * sqrt(3)) / 2)*pow(sideLength, 2);
+	}
+
+	double getSideLength()
+	{
+		return sideLength;
 	}
 
 	double getArea()
@@ -26,6 +26,13 @@ public:
 	double getPerimeter()
 	{
 		return perimeter;
+	}
+
+	double setSideLength(double l)
+	{
+		this->sideLength = l;
+		this->perimeter = sideLength * 6;
+		this->area = ((3 * sqrt(3)) / 2)*pow(sideLength, 2);
 	}
 
 

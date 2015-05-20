@@ -3,6 +3,6 @@
 class Quadrilateral : Polygon
 {
 public:
-	virtual double getArea() { return 0; }
-	virtual double getPerimeter() { return 0; }
+	virtual double getArea();
+	virtual double getPerimeter();
 };
