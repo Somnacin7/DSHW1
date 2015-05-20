@@ -33,10 +33,7 @@
     <ClInclude Include="Octagon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="EquilateralTriangle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IsoscelesTriangle.h">
+    <ClInclude Include="Rectangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
