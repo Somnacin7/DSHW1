@@ -78,6 +78,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="EquilateralTriangle.h" />
+    <ClInclude Include="IsoscelesTriangle.h" />
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="Hexagon.h" />
     <ClInclude Include="Octagon.h" />

@@ -5,6 +5,12 @@
 class Hexagon : Polygon
 {
 public:
+	Hexagon()
+	{
+
+	}
+
+
 	Hexagon(double sideLength)
 	{
 		this->sideLength = sideLength;
