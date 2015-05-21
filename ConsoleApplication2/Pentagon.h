@@ -3,7 +3,7 @@
 
 class Pentagon : protected Polygon {
 public:
-	// Constructs a regular Hexagon with the provided side length
+	// Constructs a regular Pentagon with the provided side length
 	Pentagon(double sideLength) {
 		this->sideLength = sideLength;
 		this->perimeter = sideLength * 6;

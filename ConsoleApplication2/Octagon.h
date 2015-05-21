@@ -3,7 +3,7 @@
 
 class Octagon : protected Polygon{
 public:
-	// Constructs a regular Hexagon with the provided side length
+	// Constructs a regular Octagon with the provided side length
 	Octagon(double sideLength)
 	{
 		this->sideLength = sideLength;

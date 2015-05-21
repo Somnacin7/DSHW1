@@ -19,6 +19,8 @@
 #include "Octagon.h"
 #include <iostream>
 
+// the following functions take in polygon dimensions and output area and perimeter
+
 void PerformTriangle() {
 	double n;
 	std::cout << "What is the side length of the regular triangle?" << std::endl;
@@ -104,12 +106,14 @@ void PerformOctagon() {
 	std::cout << "the area is " << o.getArea() << " and the perimeter is " << o.getPerimeter() << "." << std::endl;
 }
 
+// main function
 int main() {
 	using namespace std;
 
 	int choice = 0;
 	int type = 0;
 
+	// request user input
 	while (choice != 6)	{
 		cout << endl << "Which shape would you like to choose? Enter the number of your choice." << endl;
 		cout << "1. Triangle" << endl;
@@ -121,7 +125,7 @@ int main() {
 		cin >> choice;
 
 		switch (choice) {
-		case 1:
+		case 1: // Triangle
 			while (type != 4) {
 			cout << endl << "Enter a number:" << endl;
 			cout << "1. Triangle (regular)" << endl;
@@ -149,7 +153,7 @@ int main() {
 			}
 			break;
 
-		case 2:
+		case 2: // Quadrilateral
 			while (type != 4) {
 				cout << endl << "Enter a number:" << endl;
 				cout << "1. Quadrilateral (regular)" << endl;
@@ -177,19 +181,19 @@ int main() {
 			}
 			break;
 
-		case 3:
+		case 3: // Pentagon
 			PerformPentagon();
 			break;
 
-		case 4:
+		case 4: // Hexagon
 			PerformHexagon();
 			break;
 
-		case 5:
+		case 5: // Octagon
 			PerformOctagon();
 			break;
 
-		case 6:
+		case 6: // Quit
 			break;
 
 		default:
