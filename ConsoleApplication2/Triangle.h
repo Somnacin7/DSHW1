@@ -19,7 +19,7 @@ public:
 	void setSideLength(double length) { sideLength = length; }
 
 	virtual double getArea() {
-		return sideLength * sideLength * 0.5;
+		return (sqrt(3.0) / 4.0) * sideLength * sideLength;;
 	}
 
 	virtual double getPerimeter() {

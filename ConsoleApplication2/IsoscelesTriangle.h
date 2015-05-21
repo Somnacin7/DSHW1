@@ -10,9 +10,9 @@ public:
 		baseLength = 0;
 	}
 
-	IsoscelesTriangle(double sideLength, double baseLength) {
-		this->sideLength = sideLength;
+	IsoscelesTriangle(double baseLength, double sideLength) {
 		this->baseLength = baseLength;
+		this->sideLength = sideLength;
 	}
 
 	double getSideLength() { return sideLength; }
