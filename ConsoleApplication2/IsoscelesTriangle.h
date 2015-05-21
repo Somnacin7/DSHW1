@@ -1,18 +1,21 @@
 #include"Triangle.h"
 
-class IsoscelesTriangle:Triangle{
+class IsoscelesTriangle : protected Triangle{
 public:
 	double sideLength;
 	double baseLength;
 
-	IsoscelesTriangle() {
+	/*IsoscelesTriangle() {
 		sideLength = 0;
 		baseLength = 0;
-	}
+	}*/
 
 	IsoscelesTriangle(double baseLength, double sideLength) {
 		this->baseLength = baseLength;
 		this->sideLength = sideLength;
+		area = sqrt((sideLength * sideLength) - ((baseLength / 2.0) * (baseLength / 2.0))) * baseLength * 0.5;
+		perimeter = (sideLength * 2.0) + baseLength;
+
 	}
 
 	double getSideLength() { return sideLength; }
@@ -21,10 +24,10 @@ public:
 	void setBaseLength(double baseLength) { this->baseLength = baseLength; }
 	
 	double getArea() {
-		return sqrt((sideLength * sideLength) - ((baseLength / 2) * (baseLength / 2))) * baseLength * 0.5;
+		return area;
 	}
 
 	double getPerimeter() {
-		return (sideLength * 2) + baseLength;
+		return perimeter;
 	}
 };

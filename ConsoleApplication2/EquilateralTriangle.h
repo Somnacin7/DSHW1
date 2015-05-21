@@ -1,25 +1,31 @@
 #include"Triangle.h"
 
-class EquilateralTriangle : Triangle{
+class EquilateralTriangle : protected Triangle{
 public:
-	EquilateralTriangle() {
+	/*EquilateralTriangle() {
 		sideLength = 0;
-	}
+	}*/
 
 	EquilateralTriangle(double sideLength) {
 		this->sideLength = sideLength;
+		area = (sqrt(3.0) / 4.0) * sideLength * sideLength;
+		perimeter = sideLength * 3.0;
 	}
 
-	double getSideLength() { return sideLength; }
-
-	void setSideLength(double length) { sideLength = length; }
-
-	virtual double getArea() {
-		return (sqrt(3.0) / 4.0) * sideLength * sideLength;
+	double getSideLength() { 
+		return sideLength; 
 	}
 
-	virtual double getPerimeter() {
-		return sideLength * 3;
+	void setSideLength(double length) { 
+		sideLength = length; 
+	}
+
+	double getArea() {
+		return area;
+	}
+
+	double getPerimeter() {
+		return perimeter;
 	}
 
 private:

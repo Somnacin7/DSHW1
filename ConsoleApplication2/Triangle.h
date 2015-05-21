@@ -3,7 +3,7 @@
 #ifndef TRIANGLE
 #define TRIANGLE
 
-class Triangle:Polygon{
+class Triangle : protected Polygon{
 public:
 	
 	Triangle() {
