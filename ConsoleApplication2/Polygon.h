@@ -1,5 +1,8 @@
 #include<math.h>
 
+#ifndef POLYGON
+#define POLYGON
+
 class Polygon {
 public:
 	virtual double getArea();
@@ -9,3 +12,5 @@ protected:
 	double area;
 	double perimeter;
 };
+
+#endif
