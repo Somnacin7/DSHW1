@@ -36,27 +36,32 @@ int main() {
 		cin >> choice;
 
 		switch (choice) {
-		case 1:
-			int type = 0;
-			while (type != 4)
-			cout << "Enter a number:" << endl;
-			cout << "1. Triangle" << endl;
-			cout << "2. Equilateral Triangle" << endl;
-			cout << "3. Isosceles Triangle" << endl;
-			cout << "4. Back" << endl;
-			cin >> type;
-			break;
-		case 2:
-			break;
-		case 3:
-			break;
-		case 4:
-			break;
-		case 5:
-			break;
-		default:
-			cout << "Invalid input.";
-			break;
+			case 1:
+				int type = 0;
+				while (type != 4)
+				cout << "Enter a number:" << endl;
+				cout << "1. Triangle" << endl;
+				cout << "2. Equilateral Triangle" << endl;
+				cout << "3. Isosceles Triangle" << endl;
+				cout << "4. Back" << endl;
+				cin >> type;
+				break;
+
+			case 2:
+				break;
+
+			case 3:
+				break;
+
+			case 4:
+				break;
+
+			case 5:
+				break;
+
+			default:
+				cout << "Invalid input.";
+				break;
 		}
 	}
 
