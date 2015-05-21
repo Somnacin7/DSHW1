@@ -1,6 +1,6 @@
 #include"Triangle.h"
 
-class EquilateralTriangle{
+class EquilateralTriangle : Triangle{
 public:
 	EquilateralTriangle() {
 		sideLength = 0;
@@ -14,11 +14,11 @@ public:
 
 	void setSideLength(double length) { sideLength = length; }
 
-	virtual double area() {
+	virtual double getArea() {
 		return (sqrt(3.0) / 4.0) * sideLength * sideLength;
 	}
 
-	virtual double perimeter() {
+	virtual double getPerimeter() {
 		return sideLength * 3;
 	}
 
