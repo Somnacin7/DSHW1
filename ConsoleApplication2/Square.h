@@ -25,6 +25,7 @@ public:
 		return length;
 	}
 
+	// Set length and recalculate area and perimeter.
 	void setLength(double l)
 	{
 		length = l;
