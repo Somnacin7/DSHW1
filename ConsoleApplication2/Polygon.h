@@ -5,8 +5,8 @@
 
 class Polygon {
 public:
-	virtual double getArea()= 0;
-	virtual double getPerimeter() = 0;
+	virtual double getArea();
+	virtual double getPerimeter();
 
 protected:
 	double area;

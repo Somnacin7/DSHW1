@@ -1,8 +1,30 @@
 #include "Polygon.h"
 
-class Quadrilateral : Polygon
+// Produces a regulare quadrilateral
+class Quadrilateral : protected Polygon
 {
 public:
-	virtual double getArea() { return 0; }
-	virtual double getPerimeter() { return 0; }
+	Quadrilateral() {} 
+
+	Quadrilateral(double length)
+	{
+		this->length = length;
+		area = length * length;
+		perimeter = length * 4;
+	}
+
+	virtual double getArea()
+	{
+		return area;
+	}
+
+
+	virtual double getPerimeter()
+	{
+		return perimeter;
+	}
+
+private:
+	double length;
+
 };
