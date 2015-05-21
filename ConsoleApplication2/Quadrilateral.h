@@ -1,7 +1,7 @@
 #include "Polygon.h"
 
 // Produces a regulare quadrilateral
-class Quadrilateral : Polygon
+class Quadrilateral : protected Polygon
 {
 public:
 	Quadrilateral() {} 
