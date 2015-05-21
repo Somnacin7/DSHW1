@@ -2,7 +2,7 @@
 #include <cmath>
 
 
-class Hexagon : Polygon
+class Hexagon : protected Polygon
 {
 public:
 	// Constructs a regular Hexagon with the provided side length

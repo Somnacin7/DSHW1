@@ -1,6 +1,6 @@
 #include "Quadrilateral.h"
 
-class Rectangle : public Quadrilateral
+class Rectangle : protected Quadrilateral
 {
 
 public:
