@@ -7,8 +7,8 @@
 //		functions area() and perimeter() to implement classes for Triangle, Isosceles Triangle,
 //		Equilateral Triangle, Quadrilateral, Rectangle, Square, Pentagon, Hexagon, and Octagon,
 //		and to compute their respective areas and perimeters
-// Preconditions:
-// Postconditions:
+// Preconditions: (the input is the side length of the various polygons)
+// Postconditions: (the output is the area and perimeter of the polygon with given side length)
 
 #include "EquilateralTriangle.h"
 #include "IsoscelesTriangle.h"
@@ -20,63 +20,89 @@
 #include <iostream>
 
 void PerformTriangle() {
-	int n;
+	double n;
 	std::cout << "What is the side length of the regular triangle?" << std::endl;
 	std::cin >> n;
 	Triangle t = Triangle(n);
-	std::cout << "For a regular triangle with side length " << n << ", " << std::endl;
+	std::cout << std::endl << "For a regular triangle with side length " << n << ", " << std::endl;
 	std::cout << "the area is " << t.getArea() << " and the perimeter is " << t.getPerimeter() << "." << std::endl;
 }
 
 void PerformEquilateralTriangle() {
-	int n;
+	double n;
 	std::cout << "What is the side length of the equilateral triangle?" << std::endl;
 	std::cin >> n;
 	EquilateralTriangle t = EquilateralTriangle(n);
-	std::cout << "For an equilateral triangle with side length " << n << ", " << std::endl;
+	std::cout << std::endl << "For an equilateral triangle with side length " << n << ", " << std::endl;
 	std::cout << "the area is " << t.getArea() << " and the perimeter is " << t.getPerimeter() << "." << std::endl;
 }
 
 void PerformIsoscelesTriangle() {
-	int b, s;
+	double b, s;
 	std::cout << "What is the base length of the isosceles triangle?" << std::endl;
 	std::cin >> b;
 	std::cout << "What is the side length of the isosceles triangle?" << std::endl;
 	std::cin >> s;
 	IsoscelesTriangle t = IsoscelesTriangle(b, s);
-	std::cout << "For an isosceles triangle with base length " << b << " and side length " << s << "," << std::endl;
+	std::cout << std::endl << "For an isosceles triangle with base length " << b << " and side length " << s << "," << std::endl;
 	std::cout << "the area is " << t.getArea() << " and the perimeter is " << t.getPerimeter() << "." << std::endl;
 }
 
 void PerformQuadrilateral() {
-	int n;
+	double n;
 	std::cout << "What is the side length of the regular quadrilateral?" << std::endl;
 	std::cin >> n;
 	Quadrilateral q = Quadrilateral(n);
-	std::cout << "For a regular quadrilateral with side length " << n << ", " << std::endl;
+	std::cout << std::endl << "For a regular quadrilateral with side length " << n << ", " << std::endl;
 	std::cout << "the area is " << q.getArea() << " and the perimeter is " << q.getPerimeter() << "." << std::endl;
 }
 
 void PerformSquare() {
-	int n;
+	double n;
 	std::cout << "What is the side length of the square?" << std::endl;
 	std::cin >> n;
 	Square s = Square(n);
-	std::cout << "For a square with side length " << n << ", " << std::endl;
+	std::cout << std::endl << "For a square with side length " << n << ", " << std::endl;
 	std::cout << "the area is " << s.getArea() << " and the perimeter is " << s.getPerimeter() << "." << std::endl;
 }
 
 void PerformRectangle() {
-	int l, w;
+	double l, w;
 	std::cout << "What is the length of the rectangle?" << std::endl;
 	std::cin >> l;
 	std::cout << "What is the width of the rectangle?" << std::endl;
 	std::cin >> w;
 	Rectangle r = Rectangle(l, w);
-	std::cout << "For a regular quadrilateral with length " << l << " and width " << w << "," << std::endl;
+	std::cout << std::endl << "For a regular quadrilateral with length " << l << " and width " << w << "," << std::endl;
 	std::cout << "the area is " << r.getArea() << " and the perimeter is " << r.getPerimeter() << "." << std::endl;
 }
 
+void PerformPentagon() {
+	double n;
+	std::cout << "What is the side length of the regular pentagon?" << std::endl;
+	std::cin >> n;
+	Pentagon p = Pentagon(n);
+	std::cout << std::endl << "For a regular pentagon with side length " << n << ", " << std::endl;
+	std::cout << "the area is " << p.getArea() << " and the perimeter is " << p.getPerimeter() << "." << std::endl;
+}
+
+void PerformHexagon() {
+	double n;
+	std::cout << "What is the side length of the regular hexagon?" << std::endl;
+	std::cin >> n;
+	Hexagon h = Hexagon(n);
+	std::cout << std::endl << "For a regular hexagon with side length " << n << ", " << std::endl;
+	std::cout << "the area is " << h.getArea() << " and the perimeter is " << h.getPerimeter() << "." << std::endl;
+}
+
+void PerformOctagon() {
+	double n;
+	std::cout << "What is the side length of the regular octagon?" << std::endl;
+	std::cin >> n;
+	Octagon o = Octagon(n);
+	std::cout << std::endl << "For a regular octagon with side length " << n << ", " << std::endl;
+	std::cout << "the area is " << o.getArea() << " and the perimeter is " << o.getPerimeter() << "." << std::endl;
+}
 
 int main() {
 	using namespace std;
@@ -117,7 +143,7 @@ int main() {
 				case 4:
 					break;
 				default:
-					cout << "Invalid input." << endl;
+					cout << endl << "Invalid input." << endl;
 					break;
 				}
 			}
@@ -145,28 +171,32 @@ int main() {
 				case 4:
 					break;
 				default:
-					cout << "Invalid input." << endl;
+					cout << endl << "Invalid input." << endl;
 					break;
 				}
+			}
 			break;
 
 		case 3:
+			PerformPentagon();
 			break;
 
 		case 4:
+			PerformHexagon();
 			break;
 
 		case 5:
+			PerformOctagon();
+			break;
+
+		case 6:
 			break;
 
 		default:
-			cout << "Invalid input.";
+			cout << endl << "Invalid input." << endl;
 			break;
 		}
 	}
-
-
-	system("pause");
 
 	return 0;
 }

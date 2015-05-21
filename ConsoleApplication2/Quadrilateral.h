@@ -1,5 +1,8 @@
 #include "Polygon.h"
 
+#ifndef QUAD
+#define QUAD
+
 // Produces a regulare quadrilateral
 class Quadrilateral : protected Polygon
 {
@@ -28,3 +31,5 @@ private:
 	double length;
 
 };
+
+#endif
