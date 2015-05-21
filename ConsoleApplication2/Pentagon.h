@@ -3,7 +3,7 @@
 
 class Pentagon : protected Polygon
 {
-	// Constructs a regular Hexagon with the provided side length
+	// Constructs a regular Pentagon with the provided side length
 	Pentagon(double sideLength)
 	{
 		this->sideLength = sideLength;
@@ -26,6 +26,7 @@ class Pentagon : protected Polygon
 		return perimeter;
 	}
 
+	// Get sidelength and recalculate area and perimeter
 	double setSideLength(double l)
 	{
 		this->sideLength = l;

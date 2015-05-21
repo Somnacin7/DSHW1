@@ -5,6 +5,7 @@ class Rectangle : protected Quadrilateral
 
 public:
 
+
 	Rectangle(double length, double width)
 	{
 		
@@ -29,6 +30,7 @@ public:
 		return length; 
 	}
 
+	// Set length and recalculate area and perimeter
 	void setLength(double l) 
 	{
 		length = l;
@@ -41,6 +43,7 @@ public:
 		return width; 
 	}
 
+	// Set width and recalculate area and perimeter
 	void setWidth(double w) 
 	{
 		width = w; 

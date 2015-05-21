@@ -28,6 +28,7 @@ public:
 		return perimeter;
 	}
 
+	// Get sidelength and recalculate area and perimeter
 	double setSideLength(double l)
 	{
 		this->sideLength = l;

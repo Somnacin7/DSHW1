@@ -1,11 +1,12 @@
 #include "Polygon.h"
 
-// Produces a regulare quadrilateral
+
 class Quadrilateral : protected Polygon
 {
 public:
 	Quadrilateral() {} 
 
+	// Construct a regular quadrilateral
 	Quadrilateral(double length)
 	{
 		this->length = length;

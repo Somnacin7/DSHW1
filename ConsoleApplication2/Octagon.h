@@ -2,7 +2,7 @@
 #include <cmath>
 
 class Octagon : protected Polygon{
-	// Constructs a regular Hexagon with the provided side length
+	// Constructs a regular Octagon with the provided side length
 	Octagon(double sideLength)
 	{
 		this->sideLength = sideLength;
@@ -25,6 +25,7 @@ class Octagon : protected Polygon{
 		return perimeter;
 	}
 
+	// Get sidelength and recalculate area and perimeter
 	double setSideLength(double l)
 	{
 		this->sideLength = l;
