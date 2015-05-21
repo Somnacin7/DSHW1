@@ -154,6 +154,7 @@ int main() {
 			break;
 
 		case 2: // Quadrilateral
+			type = 0;
 			while (type != 4) {
 				cout << endl << "Enter a number:" << endl;
 				cout << "1. Quadrilateral (regular)" << endl;
