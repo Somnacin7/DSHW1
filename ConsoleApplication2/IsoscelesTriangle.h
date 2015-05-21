@@ -20,11 +20,11 @@ public:
 	double getBaseLength() { return baseLength; }
 	void setBaseLength(double baseLength) { this->baseLength = baseLength; }
 	
-	double area() {
+	double getArea() {
 		return sqrt((sideLength * sideLength) - ((baseLength / 2) * (baseLength / 2))) * baseLength * 0.5;
 	}
 
-	double perimeter() {
+	double getPerimeter() {
 		return (sideLength * 2) + baseLength;
 	}
 };
